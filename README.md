@@ -19,13 +19,30 @@ Examples while learning jmeter
 - 404 Bad request
 - 200 OK
   
-# Correlational dynamic values
+## Correlational dynamic values
 
 - Sessions IDS
 - Tokes and keys
 - State context of application
-- Others values: 
+- Others values
   - Ids
   - Objects
   - Dynamics values to test
 
+## Differents languages to use Jemeter
+
+Use one depent of the context
+
+- Javascript
+- Commons Jexl
+- Groovy (OOP)
+
+## Best practices
+
+- No obsolence
+- Dont think in GUI mode
+- Prepare the reports to use before the execute
+- Variables and propiertes
+- Use jmeter funtions
+- Always execute the real test in a Stage of perfromance and usign command mode
+  
