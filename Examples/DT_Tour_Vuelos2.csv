@@ -1,0 +1,11 @@
+V_STR_ciudadorigen,V_STR_ciudaddestino,V_STR_numerovuelo,V_STR_aerolinea,V_STR_precio
+Philadelphia,Rome,234,United Airlines,$432.98
+Boston,London,9696,Aer Lingus,$200.98
+Portland,Berlin,12,Virgin America,$765.32
+San Diego,New York,4346,Lufthansa,$233.98
+Mexico City,Dublin,43,Virgin America,$472.56
+São Paolo,Cairo,234,United Airlines,$432.98
+Paris,New York,9696,Aer Lingus,$200.98
+Philadelphia,Dublin,12,Virgin America,$765.32
+Boston,Cairo,4346,Lufthansa,$233.98
+Paris,Buenos Aires,43,Virgin America,$472.56
