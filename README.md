@@ -9,7 +9,7 @@ Examples while learning jmeter
 1. Plugin Bad Boy to record interactions on a page
 
 - [BADBOY](opensource-demo.orangehrmlive.com)
-- (Blazemeter)[https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi]
+- [Blazemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
 
 ## Importants notes
 
