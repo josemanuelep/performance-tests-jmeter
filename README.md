@@ -49,5 +49,5 @@ Use one depent of the context
 - Always execute the real test in a Stage of perfromance and usign command mode
 
 # Generate Reports 
-- jmeter -g ReporteQueSeGeneraDesdeLaEjecucion -o CarpetaDondeSeGuardaraElReporte
+- jmeter -g generatedReport -o 
   
