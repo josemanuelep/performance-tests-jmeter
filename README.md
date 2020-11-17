@@ -47,6 +47,7 @@ Use one depent of the context
 - Variables and propiertes
 - Use jmeter funtions
 - Always execute the real test in a Stage of perfromance and usign command mode
+- Execute some threads to test locally
 
 # Generate Reports 
 - jmeter -g generatedReport -o 
