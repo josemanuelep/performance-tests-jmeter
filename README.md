@@ -49,6 +49,10 @@ Use one depent of the context
 - Always execute the real test in a Stage of perfromance and usign command mode
 - Execute some threads to test locally
 
-# Generate Reports 
+## Trips
+
+- Use Console to developers in Chorme or Firefox to view and debug the transactions
+
+## Generate Reports 
 - jmeter -g generatedReport -o 
   
