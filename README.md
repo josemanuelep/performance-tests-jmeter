@@ -6,7 +6,6 @@ Examples while learning jmeter
 
 ## Plugins
 
-- [BADBOY](opensource-demo.orangehrmlive.com)
 - [Blazemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
 - [HarJemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
 
