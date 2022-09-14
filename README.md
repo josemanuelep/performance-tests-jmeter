@@ -12,6 +12,28 @@ The performance testing get the measure of:
 2.Scalability  
 3. Stability 
 
+## Types of performance testing: 
+
+1. Load testing 
+
+Simulate user load, anticipate users loads, the objective is identifity bottlenecks 
+
+2. Stress testing : 
+
+This involves testing the application under extreme workloads and analyze how it handles the traffic, the objective is identify breaking points   
+
+3. Endurance testing 
+
+It's done to validate if the application can handle the expected load for long periods of time
+
+4. Spike testing
+
+It simulates large spikes in the load generated y the users 
+
+5. Volume testing 
+
+Large number of data is populated in the database and overall software, the objective is testing with bit volume of data and the letting ob database volumes 
+
 ## Plugins
 
 1. [Blazemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
