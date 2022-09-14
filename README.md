@@ -4,12 +4,12 @@
 
 Is a non-functional testing approach to ensure that the application and the isolated elements of it will perform well under expected workload. 
 
-— The goal is not finding bugs, but to eliminate performance bottlenecks of the app 
+### The goal is not finding bugs, but to eliminate performance bottlenecks of the app 
 
 The performance testing get the measure of: 
 
 1. Speed
-2.Scalability  
+2. Scalability  
 3. Stability 
 
 ## Types of performance testing: 
@@ -46,7 +46,13 @@ Large number of data is populated in the database and overall software, the obje
 2. Don't execute performance test trough VPN
 3. Always use a performance Stage tu execute test
 
+## Performance testing process
+
+<img width="949" alt="image" src="https://user-images.githubusercontent.com/8729953/190224197-b4c95876-5a9c-4961-9ee2-d207d4f8689d.png">
+
+
 ## State codes HTTP to use assertions
+
 * 404 Bad request
 * 200 OK
  
