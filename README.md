@@ -34,6 +34,18 @@ It simulates large spikes in the load generated y the users
 
 Large number of data is populated in the database and overall software, the objective is testing with bit volume of data and the letting ob database volumes 
 
+## Questions to ask
+
+1. What is our anticipated average number of users (normal load)?
+
+2. What is our anticipated peak number of users?
+
+3. When is a good time to load-test our application (i.e. off-hours or week-ends), bearing in mind that this may very well crash one or more of our servers?
+
+4. Does our application have state? If so, how does our application manage it (cookies, session-rewriting, or some other method)?
+
+5. What is the testing intended to achieve?
+
 ## Plugins
 
 1. [Blazemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
@@ -50,6 +62,10 @@ Large number of data is populated in the database and overall software, the obje
 
 <img width="949" alt="image" src="https://user-images.githubusercontent.com/8729953/190224197-b4c95876-5a9c-4961-9ee2-d207d4f8689d.png">
 
+
+# Jmeter key notes
+
+1. Thread group: It is the way to simulate users, it's a root element where located the components and functions to be tested 
 
 ## State codes HTTP to use assertions
 
