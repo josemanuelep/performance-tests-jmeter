@@ -18,7 +18,7 @@ The performance testing get the measure of:
 
 Simulate user load, anticipate users loads, the objective is identifity bottlenecks 
 
-2. Stress testing : 
+2. Stress testing 
 
 This involves testing the application under extreme workloads and analyze how it handles the traffic, the objective is identify breaking points   
 
@@ -62,7 +62,6 @@ Large number of data is populated in the database and overall software, the obje
 
 <img width="949" alt="image" src="https://user-images.githubusercontent.com/8729953/190224197-b4c95876-5a9c-4961-9ee2-d207d4f8689d.png">
 
-
 # Jmeter key notes
 
 1. Thread group: It is the way to simulate users, it's a root element where located the components and functions to be tested 
@@ -100,10 +99,35 @@ Use one depend of the context
 * Always execute the real test in a Stage of performance and using command mode
 * Execute some threads to test locally
 
+## Jmeter elements 
+
+1. Test plan: Is the element that contains the configuration and elements necessary to execute the test
+
+2. Thread group: It the root element that contains samplers, controllers and go on and on. This is considered the beginning point of a test plan.
+
+3.Controlers
+ 
+ 3.1 Samplers : Are different types of requests send by the thread group
+
+   - FTP
+   - HTPP
+   - JDBC 
+   - SMTP 
+   
+ 3.2 Logic controlers: Logic Controllers let you customize the logic that JMeter uses to decide when to send requests.
+ 
+  - Once Only Controller
+  - Interleave Controller 
+  
+4. Listeners : Show the results of test execution, is like the reporting
+
+5. Configuration elements: Here we put variables, defaults variables 
+
+
 ## Trips
 
 - Use Console to developers in Chorme or Firefox to view and debug the transactions
 
-## Generate Reports 
+## Usefull commands
 
 <code> jmeter -g generatedReport -o </code>
