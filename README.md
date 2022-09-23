@@ -34,7 +34,7 @@ It simulates large spikes in the load generated y the users
 
 Large number of data is populated in the database and overall software, the objective is testing with bit volume of data and the letting ob database volumes 
 
-## Questions to ask
+## Questions to ask before desing performance script
 
 1. What is our anticipated average number of users (normal load)?
 
@@ -51,12 +51,6 @@ Large number of data is populated in the database and overall software, the obje
 1. [Blazemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
 
 2. [HarJemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
-
-## Important notes
-
-1. Don't execute performance test using GUI mode
-2. Don't execute performance test trough VPN
-3. Always use a performance Stage tu execute test
 
 ## Performance testing process
 
@@ -81,7 +75,7 @@ Large number of data is populated in the database and overall software, the obje
   2. Objects
   3. Dynamics values to test
 
-## Different languages to use Jemeter
+## Different languages to use Jmeter
 
 Use one depend of the context
 
@@ -125,17 +119,15 @@ Listeners provide access to the information JMeter gathers about the test cases 
 
 5. **Configuration elements:** Here we put variables, defaults variables 
 
- 
-
-5. **Assertions:** The way to validate the response, body, headers, time, status code of each test
+6. **Assertions:** The way to validate the response, body, headers, time, status code of each test
 
 Assertions allow you to assert facts about responses received from the server being tested. Using an assertion, you can essentially "test" that your application is returning the results you expect it to.
 
-6. **Timers:**
+7. **Timers:**
 
 By default, a JMeter thread executes samplers in sequence without pausing. We recommend that you specify a delay by adding one of the available timers to your Thread Group
 
-7. **Pre-Processor Elements**
+8. **Pre-Processor Elements**
 
 A Pre-Processor executes some action prior to a Sampler Request being made.
 
@@ -143,7 +135,7 @@ A Pre-Processor executes some action prior to a Sampler Request being made.
 
 A Post-Processor executes some action after a Sampler Request has been made
 
-10. **Execution order
+10. **Execution order**
 
   1. Configuration elements
   2. Pre-Processors
