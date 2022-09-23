@@ -101,13 +101,13 @@ Use one depend of the context
 
 ## Jmeter elements 
 
-1. Test plan: Is the element that contains the configuration and elements necessary to execute the test
+1. **Test plan:**  Is the element that contains the configuration and elements necessary to execute the test
 
-2. Thread group: It the root element that contains samplers, controllers and go on and on. This is considered the beginning point of a test plan.
+2. **Thread group:** It the root element that contains samplers, controllers and go on and on. This is considered the beginning point of a test plan.
 
-3.Controlers
+3. **Controlers:**
  
- 3.1 Samplers : Are different types of requests send by the thread group
+ 3.1. ** Samplers:** Are different types of requests send by the thread group
 
    - FTP
    - HTPP
