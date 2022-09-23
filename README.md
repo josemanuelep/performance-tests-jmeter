@@ -121,10 +121,45 @@ Use one depend of the context
   
 4. **Listeners :** Show the results of test execution, is like the reporting
 
+Listeners provide access to the information JMeter gathers about the test cases while JMeter runs. The Graph Results listener plots the response times on a graph
+
 5. **Configuration elements:** Here we put variables, defaults variables 
+
+ 
 
 5. **Assertions:** The way to validate the response, body, headers, time, status code of each test
 
+Assertions allow you to assert facts about responses received from the server being tested. Using an assertion, you can essentially "test" that your application is returning the results you expect it to.
+
+6. **Timers:**
+
+By default, a JMeter thread executes samplers in sequence without pausing. We recommend that you specify a delay by adding one of the available timers to your Thread Group
+
+7. **Pre-Processor Elements**
+
+A Pre-Processor executes some action prior to a Sampler Request being made.
+
+9. **Post-Processor Elements**
+
+A Post-Processor executes some action after a Sampler Request has been made
+
+10. **Execution order
+
+  1. Configuration elements
+  2. Pre-Processors
+  3. Timers
+  4. Sampler
+  5. Post-Processors (unless SampleResult is null)
+  6. Assertions (unless SampleResult is null)
+  7. Listeners (unless SampleResult is null)
+
+# Using Variables to parameterise tests
+
+Variables don't have to vary - they can be defined once, and if left alone, will not change value
+
+HOST             ${__P(host,www.example.com)}
+THREADS          ${__P(threads,10)}
+LOOPS            ${__P(loops,20)}
 
 ## Trips
 
@@ -132,4 +167,4 @@ Use one depend of the context
 
 ## Usefull commands
 
-<code> jmeter -g generatedReport -o </code>
+<code> jmeter -n -t testfile  -l file.jtl -e -o report-output/report </code>
