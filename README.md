@@ -34,7 +34,7 @@ It simulates large spikes in the load generated y the users
 
 Large number of data is populated in the database and overall software, the objective is testing with bit volume of data and the letting ob database volumes 
 
-## Questions to ask
+## Questions to ask before desing performance script
 
 1. What is our anticipated average number of users (normal load)?
 
@@ -51,12 +51,6 @@ Large number of data is populated in the database and overall software, the obje
 1. [Blazemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
 
 2. [HarJemeter](https://chrome.google.com/webstore/detail/blazemeter-the-continuous/mbopgmdnpcbohhpnfglgohlbhfongabi)
-
-## Important notes
-
-1. Don't execute performance test using GUI mode
-2. Don't execute performance test trough VPN
-3. Always use a performance Stage tu execute test
 
 ## Performance testing process
 
@@ -81,7 +75,7 @@ Large number of data is populated in the database and overall software, the obje
   2. Objects
   3. Dynamics values to test
 
-## Different languages to use Jemeter
+## Different languages to use Jmeter
 
 Use one depend of the context
 
@@ -101,28 +95,63 @@ Use one depend of the context
 
 ## Jmeter elements 
 
-1. Test plan: Is the element that contains the configuration and elements necessary to execute the test
+1. **Test plan:**  Is the element that contains the configuration and elements necessary to execute the test
 
-2. Thread group: It the root element that contains samplers, controllers and go on and on. This is considered the beginning point of a test plan.
+2. **Thread group:** It the root element that contains samplers, controllers and go on and on. This is considered the beginning point of a test plan.
 
-3.Controlers
+3. **Controlers:**
  
- 3.1 Samplers : Are different types of requests send by the thread group
+ 3.1. **Samplers:** Are different types of requests send by the thread group
 
    - FTP
    - HTPP
    - JDBC 
    - SMTP 
    
- 3.2 Logic controlers: Logic Controllers let you customize the logic that JMeter uses to decide when to send requests.
+ 3.2. **Logic controlers:** Let you customize the logic that JMeter uses to decide when to send requests.
  
   - Once Only Controller
   - Interleave Controller 
   
-4. Listeners : Show the results of test execution, is like the reporting
+4. **Listeners :** Show the results of test execution, is like the reporting
 
-5. Configuration elements: Here we put variables, defaults variables 
+Listeners provide access to the information JMeter gathers about the test cases while JMeter runs. The Graph Results listener plots the response times on a graph
 
+5. **Configuration elements:** Here we put variables, defaults variables 
+
+6. **Assertions:** The way to validate the response, body, headers, time, status code of each test
+
+Assertions allow you to assert facts about responses received from the server being tested. Using an assertion, you can essentially "test" that your application is returning the results you expect it to.
+
+7. **Timers:**
+
+By default, a JMeter thread executes samplers in sequence without pausing. We recommend that you specify a delay by adding one of the available timers to your Thread Group
+
+8. **Pre-Processor Elements**
+
+A Pre-Processor executes some action prior to a Sampler Request being made.
+
+9. **Post-Processor Elements**
+
+A Post-Processor executes some action after a Sampler Request has been made
+
+10. **Execution order**
+
+  1. Configuration elements
+  2. Pre-Processors
+  3. Timers
+  4. Sampler
+  5. Post-Processors (unless SampleResult is null)
+  6. Assertions (unless SampleResult is null)
+  7. Listeners (unless SampleResult is null)
+
+# Using Variables to parameterise tests
+
+Variables don't have to vary - they can be defined once, and if left alone, will not change value
+
+HOST             ${__P(host,www.example.com)}
+THREADS          ${__P(threads,10)}
+LOOPS            ${__P(loops,20)}
 
 ## Trips
 
@@ -130,4 +159,4 @@ Use one depend of the context
 
 ## Usefull commands
 
-<code> jmeter -g generatedReport -o </code>
+<code> jmeter -n -t testfile  -l file.jtl -e -o report-output/report </code>
