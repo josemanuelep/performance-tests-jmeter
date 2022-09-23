@@ -107,21 +107,23 @@ Use one depend of the context
 
 3. **Controlers:**
  
- 3.1. ** Samplers:** Are different types of requests send by the thread group
+ 3.1. **Samplers:** Are different types of requests send by the thread group
 
    - FTP
    - HTPP
    - JDBC 
    - SMTP 
    
- 3.2 Logic controlers: Logic Controllers let you customize the logic that JMeter uses to decide when to send requests.
+ 3.2. **Logic controlers:** Let you customize the logic that JMeter uses to decide when to send requests.
  
   - Once Only Controller
   - Interleave Controller 
   
-4. Listeners : Show the results of test execution, is like the reporting
+4. **Listeners :** Show the results of test execution, is like the reporting
 
-5. Configuration elements: Here we put variables, defaults variables 
+5. **Configuration elements:** Here we put variables, defaults variables 
+
+5. **Assertions:** The way to validate the response, body, headers, time, status code of each test
 
 
 ## Trips
