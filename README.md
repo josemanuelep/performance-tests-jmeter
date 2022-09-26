@@ -137,13 +137,13 @@ A Post-Processor executes some action after a Sampler Request has been made
 
 10. **Execution order**
 
-  1. Configuration elements
-  2. Pre-Processors
-  3. Timers
-  4. Sampler
-  5. Post-Processors (unless SampleResult is null)
-  6. Assertions (unless SampleResult is null)
-  7. Listeners (unless SampleResult is null)
+ - 1. Configuration elements
+ - 2. Pre-Processors
+ - 3. Timers
+ - 4. Sampler
+ - 5. Post-Processors (unless SampleResult is null)
+ - 6. Assertions (unless SampleResult is null)
+ - 7. Listeners (unless SampleResult is null)
 
 # Using Variables to parameterise tests
 
