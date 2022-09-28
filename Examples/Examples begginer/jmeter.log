@@ -1,0 +1,29 @@
+2022-09-28 14:38:56,767 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-09-28 14:38:56,790 INFO o.a.j.JMeter: Loading user properties from: /usr/local/Cellar/jmeter/5.5/libexec/bin/user.properties
+2022-09-28 14:38:56,791 INFO o.a.j.JMeter: Loading system properties from: /usr/local/Cellar/jmeter/5.5/libexec/bin/system.properties
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: Version 5.5
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: java.version=18.0.2.1
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: os.name=Mac OS X
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: os.arch=x86_64
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: os.version=11.7
+2022-09-28 14:38:56,796 INFO o.a.j.JMeter: file.encoding=UTF-8
+2022-09-28 14:38:56,797 INFO o.a.j.JMeter: java.awt.headless=true
+2022-09-28 14:38:56,797 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-09-28 14:38:56,797 INFO o.a.j.JMeter: Available Processors =12
+2022-09-28 14:38:56,804 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-09-28 14:38:56,804 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-09-28 14:38:56,804 INFO o.a.j.JMeter: JMeterHome=/usr/local/Cellar/jmeter/5.5/libexec
+2022-09-28 14:38:56,804 INFO o.a.j.JMeter: user.dir  =/Users/jose.echeverry/Desktop/performance-tests-jmeter/Examples
+2022-09-28 14:38:56,804 INFO o.a.j.JMeter: PWD       =/Users/jose.echeverry/Desktop/performance-tests-jmeter/Examples
+2022-09-28 14:38:56,805 INFO o.a.j.JMeter: IP: 192.168.1.9 Name: CO-IT006393 FullName: 192.168.1.9
+2022-09-28 14:38:56,812 ERROR o.a.j.JMeter: An error occurred: 
+java.lang.IllegalArgumentException: Cannot write to '/Users/jose.echeverry/Desktop/performance-tests-jmeter/Examples/report-output/report' as folder does not exist and parent folder is not writable
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:672) ~[jorphan.jar:5.5]
+	at org.apache.jorphan.util.JOrphanUtils.canSafelyWriteToFolder(JOrphanUtils.java:620) ~[jorphan.jar:5.5]
+	at org.apache.jmeter.JMeter.extractAndSetReportOutputFolder(JMeter.java:519) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeter.start(JMeter.java:469) ~[ApacheJMeter_core.jar:5.5]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:577) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) ~[ApacheJMeter.jar:5.5]
