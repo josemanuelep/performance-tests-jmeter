@@ -113,6 +113,11 @@ Use one depend of the context
   - Once Only Controller
   - Interleave Controller 
   
+3.2.1 **Recroding controller : **
+
+
+  
+  
 4. **Listeners :** Show the results of test execution, is like the reporting
 
 Listeners provide access to the information JMeter gathers about the test cases while JMeter runs. The Graph Results listener plots the response times on a graph
