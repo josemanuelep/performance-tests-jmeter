@@ -173,4 +173,4 @@ LOOPS            ${__P(loops,20)}
 
 ## Usefull commands
 
-<code> jmeter -n -t testfile  -l file.jtl -e -o report-output/report </code>
+<code> jmeter -Jhost=www.host.com -Jthreads=100 -n -t testfile  -l file.jtl -e -o report-output/report </code>
